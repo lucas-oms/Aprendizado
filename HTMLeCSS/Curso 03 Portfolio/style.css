@@ -1,0 +1,62 @@
+body {
+    background-color: #000000;
+}
+
+.principal {
+    display: grid;
+    column-gap: 32px;
+    row-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "principal__titulo principal__titulo principal__imagem"
+      "principal__paragrafo principal__paragrafo principal__imagem"
+      "principal__botao--grid1 principal__botao--grid2 principal__imagem"
+    ;
+    width: 50vw;
+    position: absolute;
+    top: 20vh;
+    left: 21vw;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+}
+
+.principal__titulo {
+    grid-area: principal__titulo;
+    color: #F6F6F6;
+    font-size: 1.9rem;
+}
+
+.principal__titulo .enfase {
+    color: #22D4FD;
+}
+
+.principal__paragrafo {
+    grid-area: principal__paragrafo;
+    color: #F6F6F6;
+    font-size: 1.05rem;
+}
+
+.principal__botao {
+    border-radius: 16px;
+    background-color: #22D4FD;
+}
+
+.principal__botao a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.principal__botao--grid1 {
+    grid-area: principal__botao--grid1;
+}
+
+.principal__botao--grid2 {
+    grid-area: principal__botao--grid2;
+}
+
+.principal__imagem {
+    grid-area: principal__imagem;
+    max-height: 55vh;
+    max-width: 22vw;
+}
